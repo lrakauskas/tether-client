@@ -9,3 +9,7 @@ This package is for applications that need to record local changes and sync them
 ## Documentation
 
 Full documentation is available at [laravel-tether.com](https://laravel-tether.com/docs).
+
+## Other Tether packages
+
+- [Tether Server](https://github.com/lrakauskas/tether-server): The server-side package for handling sync requests and resolving conflicts.
