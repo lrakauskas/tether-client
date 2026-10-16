@@ -148,12 +148,12 @@ return [
     | Pull Page Size
     |--------------------------------------------------------------------------
     |
-    | When set, each pull request will ask the server for at most this many
-    | snapshots. If the server responds with has_more: true the client will
-    | automatically issue additional pull requests until all pages are consumed.
+    | Target number of snapshots per pull request. Each page includes every
+    | record sharing its final timestamp, so responses may exceed this target.
+    | The client follows has_more until all pages are consumed.
     |
     | Set to null (the default) to disable pagination and pull all changed
-    | records in a single request - the behaviour prior to this feature.
+    | records in a single request.
     |
     */
     'pull_page_size' => env('TETHER_PULL_PAGE_SIZE', null),
